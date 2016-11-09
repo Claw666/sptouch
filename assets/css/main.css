@@ -1,0 +1,669 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+
+/*CSS RESET*/
+/*Source: http://meyerweb.com/eric/tools/css/reset/index.html*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Main CSS*/
+/*General*/
+body {
+	color: white;
+	background: #014359; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#337991,#014359 ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#337991,#014359 ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#337991,#014359 ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#337991,#014359 ); /* Standard syntax (must be last) */
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  font-weight: normal;
+  font-style: normal;
+  overflow: hidden;
+  height: 100% !important;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*End of General*/
+/*Header*/
+
+header #sp-logo {
+	max-width: 100%;
+    height: auto;
+}
+
+#hdr-container .logo {
+
+}
+#hdr-container {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    color: white !important;
+    padding-bottom: 60px;
+    padding-top: 40px;
+
+}
+.logo, .back-container, .hdr-date {
+    width: 300px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+#hdr-container:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+.hdr-date {
+	font-size: 3em !important;
+	text-align: center;
+  padding-left: 30px;
+  padding-top: 35px;
+}
+/*BUS Page's Header*/
+.back-container {
+  text-align: center;
+}
+#icon-backwards{
+  width: 115px;
+
+}
+/*End of Header*/
+/*Body*/
+.map-icon img {
+  height: 210px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+.map-text {
+  position: absolute;
+  top:240px;
+  font-size: 3em;
+  right: 0;
+  left: 0;
+}
+
+.search-icon img {
+	height: 170px;
+	position: absolute;
+	left: 65px;
+	top: 50px;
+}
+.search-text {
+	position: absolute;
+	top:240px;
+	font-size: 3em;
+	right: 0;
+	left: 0;
+}
+
+.events-icon img {
+  height: 170px;
+  position: absolute;
+  left: 65px;
+  top: 40px;
+}
+.events-text {
+  position: absolute;
+  top:240px;
+  font-size: 3em;
+  right: 0;
+  left: 0;
+}
+.meeting-icon img {
+  height: 143px;
+  position: absolute;
+  left: 43px;
+  top: 65px;
+}
+.meeting-text {
+  position: absolute;
+  top:240px;
+  font-size: 3em;
+  right: 0;
+  left: 0;
+}
+.bus-icon img {
+  height: 165px;
+  position: absolute;
+  left: 68px;
+  top: 51px;
+}
+.bus-text {
+  position: absolute;
+  top:240px;
+  font-size: 3em;
+  right: 0;
+  left: 0;
+}
+.info-icon img {
+  height: 165px;
+  position: absolute;
+  left: 68px;
+  top: 51px;
+}
+.info-text {
+  position: absolute;
+  top:240px;
+  font-size: 3em;
+  right: 0;
+  left: 0;
+}
+.row-one,.row-two {
+    text-align: center;
+}
+
+.box-one, .box-two, .box-three {
+    width: 300px;
+    height: 300px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    background: #014359;
+    border-radius: 5px;
+}
+.box-one, .box-two {
+	margin-right: 30px;
+}
+.row {
+	padding-bottom: 30px;
+}
+.grow {
+	position: relative;
+  	-webkit-transition:all 0.5s ease-out;
+  	-moz-transition:all 0.5s ease-out;
+  	-ms-transition:all 0.5s ease-out;
+  	-o-transition:all 0.5s ease-out;
+  	transition:all 0.5s ease-out;
+ 	box-shadow: 0 18px 19px rgba(0,0,0,0.2);
+}
+.grow:after {
+	content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  -webkit-transition:opacity 0.3s ease-out;
+  -moz-transition:opacity 0.3s ease-out;
+  -ms-transition:opacity 0.3s ease-out;
+  -o-transition:opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.grow:hover {
+  	-webkit-transform:scale(1.1);
+  	-moz-transform:scale(1.1);
+  	-ms-transform:scale(1.1);
+  	-o-transform:scale(1.1);
+  	transform:scale(1.1);
+  	z-index: 1;
+}
+.grow:hover:after {
+	opacity: 1;
+	z-index:1;
+}
+#hdr-news {
+	text-align: center;
+	font-size: 3em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.news-item {
+	margin: 0 auto;
+	width: 80%;
+	height: 200px;
+	background-color: white;
+	margin-bottom: 20px;
+  border-radius: 10px;
+}
+.news-block {
+  color: black;
+}
+.news-block .news-icon img{
+  width: 65px;
+  position: relative;
+  left: 15px;
+  top: 15px;
+  float: left;
+}
+.news-block .news-name {
+  float: left;
+  padding: 20px;
+  padding-left: 50px;
+  font-size: 50;
+  text-align: center;
+}
+.news-block .news-date {
+  float: left;
+  padding: 20px;
+  padding-left: 50px;
+  font-size: 50;
+  text-align: center;
+}
+.news-block .news-info {
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+.read-btn button {
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  background-color: #337991;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  padding: 50px 150px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 45px;
+  cursor: pointer;
+}
+.read-btn {
+	text-align: center;
+}
+.center { 
+  margin: 0 auto; 
+  width: 1200px; 
+  display: block;
+}
+
+#media-video{
+  background:#000;
+  color:#ccc;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.8);
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+  margin: 0 auto;
+  display: block;
+}
+
+/*End of Body*/
+
+/*CSS for BUS PAGE*/
+
+.nextbus-container, .busstop-container, .timetable-container, .showmap-container, .map-container {
+  text-align: center;
+  padding-bottom: 30px;
+  
+}
+.nextbus-container .nextbus-box table, .busstop-container .busstop-box table,
+.timetable-container .timetable-box table {
+  position: absolute;
+}
+.nextbus-box, .busstop-box, .timetable-box, .showmap-box {
+  width: 950px;
+  height: 300px;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background: #014359;
+  border-radius: 5px;
+}
+.timetable-box {
+  height: 500px !important;
+}
+.showmap-box {
+  background: #77adbf !important;
+  height: 150px !important;
+}
+.nextbus-text {
+  position: relative;
+  left: 60px;
+  font-size: 50px;
+}
+.nextbus-icon img{
+  width: 170px;    
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+.nextbus-time {
+  text-align: center;
+  position: relative;
+  top: 85px;
+  left: 300px;
+  font-size: 100px;
+}
+.busstop-box table, .timetable-box table {
+  width: 950px;
+  margin: 0 auto;
+  text-align: center;
+}
+.busstop-box .busstop-icon img {
+  width: 100px;
+  padding-bottom: 20px;
+}
+.busstop-text p {
+  font-size: 45px;
+  padding-top: 30px;
+}
+.busstop-icon .icon-run img {
+  width: 155px;
+}
+.busstop-time {
+  font-size: 40px;
+}
+.timetable-text h2 {
+  font-size: 55px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-weight: 300;
+}
+.timetable-stops p {
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+.timetable-slots p {
+  font-size: 40px;
+}
+.showmap-box button {
+  border: none;
+  color: #fff;
+  background-color: #77adbf;
+  font-size: 50px;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  cursor: pointer;
+  margin-top: 40px;
+
+}
+
+/*CSS for News Page*/
+.news-header {
+  font-size: 70px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.news-header-descr {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*CSS for Search Page*/
+.search-box {
+  text-align: center;
+}
+.search-box .search-field {
+  width: 1000px;
+  height: 100px;
+  border-radius: 10px;
+  color:  ##014359;
+  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  font-size: 35px;
+  vertical-align: middle;
+  padding-left: 20px;
+  box-shadow: 0 18px 19px rgba(0,0,0,0.2);
+}
+
+#search-area {
+  text-align: center;
+  overflow-y: scroll !important;
+  height: 1300px;
+  z-index: 1;
+}
+#search-area::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+#search-area::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #fff;
+}
+ 
+#search-area::-webkit-scrollbar-thumb {
+  background-color: #092d39;
+}
+#search-area::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+#search-area::-webkit-scrollbar-corner {
+    background-color: transparent;
+    position: relative;
+}
+
+
+.companybox {
+    width: 298px;
+    height: 440px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    background: #fff;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.company-logo img {
+  position: absolute;
+  right: 55px;
+  width: 200px;
+}
+.comp-desc-container {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background: #77adbf;
+  top: 60%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: left !important;
+  color: #02445a;
+}
+.comp-name {
+  font-size: 50px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.comp-addr {
+  font-size: 30px;
+  padding-left: 20px;
+}
+.comp-addr p {
+  float: left;
+  padding-right: 100px;
+}
+.comp-desc-container img {
+  width: 50px;
+  height: 30px;
+  float: right;
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  background-color: #02445a;
+  padding: 20px 10px;
+  border-radius: 50px;
+}
+/*CSS for Map page*/
+ .map-box {
+  width: 1000px;
+  height: 800px;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  border-radius: 5px;
+ }
+.map-hdr h1{
+  font-size: 50px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/*CSS for Ind Comp Temp*/
+
+/*Description part*/
+.indComp-descr {
+  padding-top: 100px;
+  width: 1300px;
+  margin: 0 auto;
+}
+.indComp-left, .indComp-right {
+  float: left;
+}
+.indComp-left img{
+  width: 500px;
+}
+
+.indComp-right {
+  width: 800px
+}
+.indComp-right-wrapper {
+  width: 800px;
+  margin: 0 auto;
+  display: block;
+  height: 264px;
+  margin: 20px;
+  margin-top: 0 !important;
+}
+.indComp-right-l, .indComp-right-r {
+    float: left;
+}
+.indComp-right-l .cp-img-profile, .indComp-right-l .cp-img-grow, .indComp-right-l .cp-img-team {
+  content: "";
+  width: 264px;
+  height: 264px;
+  display: block;
+  margin-right: 20px;
+}
+.indComp-right-l .cp-img-profile {
+  background-image: url(../img/cp-profile.png);
+  background-position: center center;
+  background-size: 90%;
+}
+.indComp-right-l .cp-img-grow {
+  background-image: url(../img/cp-grow.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+.indComp-right-l .cp-img-team {
+  background-image: url(../img/cp-team.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+}
+.indComp-right-r {
+  width: 500px
+}
+.indComp-right-r p {
+  font-size: 22px;
+  line-height: 32px;
+  padding: 20px;
+  text-align: justify;
+  vertical-align: middle;
+}
+.cp-profile {
+  background-color: #115b74;
+}
+.cp-grow {
+  background-color: #1c6c87;
+}
+.cp-team {
+  background-color: #337991;
+}
+.cta {
+  padding: 40px 0;
+  background-color: #337991;
+}
+.cta h3 {
+  text-align: center;
+  font-size: 30px;
+}
+.cta p {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  padding-top: 20px;
+  color:#fff;
+}
+.cta .office-btn {
+    margin-top: 20px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: 5px solid #fff;
+    border-radius: 6px;
+    padding-bottom: 15px;
+}
+
+/*CSS for event page*/
+.show-events {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.show-events iframe {
+  margin-top: -351px;
+  margin-left: -1px;
+  width: 742px;
+  height: 1465px;
+}
+

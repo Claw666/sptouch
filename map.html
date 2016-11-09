@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<title>Science Park Touch Screen</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(50.96104,-1.42257),
+		    zoom:17,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+
+	</script>
+</head>
+<body >
+	<!--Header-->
+	<header>
+		<nav>
+			<div id="hdr-container">
+    			<div class="hdr-date">Mon 13:30PM</div>
+    			<div class="back-container"><a href="index.html"><img id="icon-backwards" src="assets/img/back-sign.png"></a></div>
+    			<div class="logo"><img  id="sp-logo" src="assets/img/southampton-science-park.png" alt="Science Park" /></div>
+			</div>
+		</nav>
+	</header>
+	<!--Main Part of Body-->
+	<article>
+		<section>
+			<div class="map-hdr"><h1>Find the Nearest Bus Stop to You!</h1></div>
+
+		</section>
+		<section class="map-container">
+			<div class="map-box " id="googleMap">
+			</div>
+		</section>
+	</article>
+	<!--Footer-->
+	<footer>
+
+	</footer>
+</body>
