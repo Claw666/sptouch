@@ -6,19 +6,26 @@
 	<meta name="keywords" content="" />
 	<title>Science Park Touch Screen</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script src="assets/js/clock.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script>
 		var $iFrameContents = $('iframe').contents(),
     	$entryContent= $iFrameContents.find('article.post-1');
 		$iFrameContents.find('html').replaceWith($entryContent);
 	</script>
+	<script type="text/javascript">
+	  function iframeLoaded() {
+	      function resizeIframe(iframe) {
+		    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+		  }
+	</script>   
 </head>
 <body>
 	<!--Header-->
 	<header>
 		<nav>
 			<div id="hdr-container">
-    			<div class="hdr-date">Mon 13:30PM</div>
+    			<div class="hdr-date"></div>
     			<div class="back-container"><a href="index.html"><img id="icon-backwards" src="assets/img/back-sign.png"></a></div>
     			<div class="logo"><img  id="sp-logo" src="assets/img/southampton-science-park.png" alt="Science Park" /></div>
 			</div>
@@ -27,8 +34,7 @@
 	<!--Main Part of Body-->
 	<article>
 		<div class="show-events">
-			<iframe scrolling="no" src="http://science-park.co.uk/events">
-			</iframe>
+			<iframe  onload="resizeIframe(this)" scrolling="no" src="http://science-park.co.uk/events"></iframe>
 		</div>
 	</article>
 	<!--Footer-->

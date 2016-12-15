@@ -6,13 +6,14 @@
 	<meta name="keywords" content="" />
 	<title>Science Park Touch Screen</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script src="assets/js/clock.js"></script>
 </head>
 <body >
 	<!--Header-->
 	<header>
 		<nav>
 			<div id="hdr-container">
-    			<div class="hdr-date">Mon 13:30PM</div>
+    			<div class="hdr-date"></div>
     			<div class="back-container"><a href="index.html"><img id="icon-backwards" src="assets/img/back-sign.png"></a></div>
     			<div class="logo"><img  id="sp-logo" src="assets/img/southampton-science-park.png" alt="Science Park" /></div>
 			</div>
@@ -37,17 +38,15 @@
 			<div class="busstop-box grow">
 				<table>
 				  <tr class="busstop-text">
-				    <td colspan="3"><p>Time to nearest bus stop</p></td>
+				    <td colspan="2"><p>Time to nearest bus stop</p></td>
 				  </tr>
-				  <tr class="busstop-icon">
-				    <td class="icon-walk"><img src="assets/img/walk.png"></td>
-				    <td class="icon-run"><img src="assets/img/run.png"></td>
-				    <td class="icon-chill"><img src="assets/img/chill.png"></td>
+				  <tr class="timetable-stops">
+				    <td class="stop-sp"><p>Science Park</p></td>
+				    <td class="stop-chillarms"><p>Chillworth Arms</p></td>
 				  </tr>
-				  <tr class="busstop-time">
-				    <td class="busstop-walk"><p>12 mins</p></td>
-				    <td class="busstop-run"><p>6 mins</p></td>
-				    <td class="busstop-chill"><p>Next Bus</p></td>
+				  <tr class="timetable-slots">
+				  	<td ><p>6 mins</p></td>
+				  	<td ><p>13 mins</p></td>
 				  </tr>
 				</table>
 			</div>
@@ -63,24 +62,70 @@
 				    <td class="stop-chillarms"><p>Chillworth Arms</p></td>
 				  </tr>
 				  <tr class="timetable-slots">
-				  	<td ><p>9:41 am</p></td>
-				  	<td ><p>9:47 am</p></td>
+				  	<td >-</td>
+				  	<td ><p>07:38 AM</p></td>
 				  </tr>
 				  <tr class="timetable-slots">
-				  	<td ><p>9:41 am</p></td>
-				  	<td ><p>9:47 am</p></td>
+				  	<td >-</td>
+				  	<td ><p>09:06 AM</p></td>
 				  </tr>
 				  <tr class="timetable-slots">
-				  	<td ><p>9:41 am</p></td>
-				  	<td ><p>9:47 am</p></td>
+				  	<td >-</td>
+				  	<td ><p>09:51 AM</p></td>
+				  </tr>
+				  <tr class="timetable-slots">
+				  	<td >-</td>
+				  	<td ><p>11:16 AM</p></td>
+				  </tr>
+				  <tr class="timetable-slots">
+				  	<td >-</td>
+				  	<td ><p>12:16 PM</p></td>
+				  </tr>
+				  <tr class="timetable-slots">
+				  	<td >-</td>
+				  	<td ><p>01:16 PM</p></td>
+				  </tr>
+				  <tr class="timetable-slots">
+				  	<td >-</td>
+				  	<td ><p>02:16 PM</p></td>
+				  </tr>
+				  <tr class="timetable-slots">
+				  	<td >-</td>
+				  	<td ><p>03:41 PM</p></td>
+				  </tr>
+				  <tr class="timetable-slots">
+				  	<td ><p>04:40 PM</p></td>
+				  	<td ><p>04:45 PM</p></td>
+				  </tr>
+				  <tr class="timetable-slots">
+				  	<td ><p>05:10 PM</p></td>
+				  	<td ><p>05:15 PM</p></td>
+				  </tr>
+				  <tr class="timetable-slots">
+				  	<td ><p>05:55 PM</p></td>
+				  	<td ><p>06:00 PM</p></td>
 				  </tr>
 				</table>
 			</div>
 		</section>
-		<section class="showmap-container">
-			<a href="map.html"><div class="showmap-box grow">
-				<button type="button">Show me on Map</button>
-			</div></a>
+		<section class="taxi-container">
+			<div class="taxi-box grow">
+				<table>
+				  <tr class="taxi-text">
+				    <td colspan="3"><p>Alternatively grab a taxi</p></td>
+				  </tr>
+				  <tr class="taxi-comp">
+				    <td class=""><p>West Quay Cars</p></td>
+				    <td class=""><p>Radio Taxis</p></td>
+				    <td class=""><p>The Trans Group</td>
+				  </tr>
+				  <tr class="taxi-phone">
+				    <td class="taxi-westq"><p>023 8099 9999</p></td>
+				    <td class="taxi-radio"><p>023 8066 6666</p></td>
+				    <td class="taxi-trans"><p>080 0077 8797</p></td>
+				  </tr>
+				</table>
+			</div>
 		</section>
 	</article>
 	<!--Footer-->
