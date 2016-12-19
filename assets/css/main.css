@@ -77,140 +77,131 @@ a {
 /*End of General*/
 /*Header*/
 
-header #sp-logo {
-	max-width: 100%;
-    height: auto;
-}
-
-#hdr-container .logo {
-
-}
 #hdr-container {
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     color: white !important;
     padding-bottom: 60px;
-    padding-top: 40px;
+    display: flex;
 
 }
 .logo, .back-container, .hdr-date {
-    width: 300px;
-    vertical-align: top;
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
+    width: 33.3333%;
+    flex: 1;
 }
-#hdr-container:after {
-    content: '';
-    width: 100%;
-    display: inline-block;
-    font-size: 0;
-    line-height: 0;
+.logo {
+  padding-top: 20px;
+}
+#sp-logo {
+  width: 80%;
+}
+.hdr-date {
+  padding-top: 45px;
 }
 
+
 .hdr-date {
-	font-size: 3em !important;
+	font-size: 2em !important;
 	text-align: center;
-  padding-left: 30px;
-  padding-top: 35px;
 }
-/*BUS Page's Header*/
 .back-container {
   text-align: center;
+
 }
 #icon-backwards{
-  width: 115px;
+  width: 70px;
+  padding-top: 30px;
 
 }
 /*End of Header*/
 /*Body*/
 .map-icon img {
-  height: 210px;
+  height: 150px;
   position: absolute;
-  left: 50px;
-  top: 50px;
+  left: 30px;
+  top: 10px;
 }
 .map-text {
   position: absolute;
-  top:240px;
-  font-size: 3em;
+  top:150px;
+  font-size: 2em;
   right: 0;
   left: 0;
 }
 
 .search-icon img {
-	height: 170px;
+	height: 100px;
 	position: absolute;
-	left: 65px;
-	top: 50px;
+	left:53px;
+	top: 33px;
 }
 .search-text {
 	position: absolute;
-	top:240px;
-	font-size: 3em;
+	top:150px;
+	font-size: 2em;
 	right: 0;
 	left: 0;
 }
 
 .events-icon img {
-  height: 170px;
+  height: 110px;
   position: absolute;
-  left: 65px;
-  top: 40px;
+  left: 45px;
+  top: 25px;
 }
 .events-text {
   position: absolute;
-  top:240px;
-  font-size: 3em;
+  top:150px;
+  font-size: 2em;
   right: 0;
   left: 0;
 }
 .meeting-icon img {
-  height: 143px;
+  height: 80px;
   position: absolute;
-  left: 43px;
-  top: 65px;
+  left: 40px;
+  top: 40px;
 }
 .meeting-text {
   position: absolute;
-  top:240px;
-  font-size: 3em;
+  top: 150px;
+  font-size: 2em;
   right: 0;
   left: 0;
 }
 .bus-icon img {
-  height: 165px;
+  height: 100px;
   position: absolute;
-  left: 68px;
-  top: 51px;
+  left: 50px;
+  top: 35px;
 }
 .bus-text {
   position: absolute;
-  top:240px;
-  font-size: 3em;
+  top:150px;
+  font-size: 2em;
   right: 0;
   left: 0;
 }
 .info-icon img {
-  height: 165px;
+  height: 100px;
   position: absolute;
-  left: 68px;
-  top: 51px;
+  left: 50px;
+  top: 33px;
 }
 .info-text {
   position: absolute;
-  top:240px;
-  font-size: 3em;
+  top:150px;
+  font-size: 2em;
   right: 0;
   left: 0;
 }
-.row-one,.row-two {
+.row-one,.row-two, .row-three {
     text-align: center;
 }
 
 .box-one, .box-two, .box-three {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     vertical-align: top;
     display: inline-block;
     *display: inline;
@@ -342,7 +333,7 @@ header #sp-logo {
 
 .nextbus-container, .busstop-container, .timetable-container,.taxi-container,.map-container{
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   
 }
 .nextbus-container .nextbus-box table, .busstop-container .busstop-box table,
@@ -350,8 +341,8 @@ header #sp-logo {
   position: absolute;
 }
 .nextbus-box, .busstop-box, .timetable-box, .taxi-box{
-  width: 950px;
-  height: 250px;
+  width: 650px;
+  height: 150px;
   vertical-align: top;
   display: inline-block;
   *display: inline;
@@ -360,28 +351,28 @@ header #sp-logo {
   border-radius: 5px;
 }
 .timetable-box {
-  height: 750px !important;
+  height: 500px !important;
 }
 .nextbus-text {
   position: relative;
-  left: 60px;
-  font-size: 50px;
+  left: 35px;
+  font-size: 30px;
 }
 .nextbus-icon img{
-  width: 170px;    
+  width: 110px;    
   position: relative;
-  top: 34px;
-  left: 100px;
+  top: 15px;
+  left: 55px;
 }
 .nextbus-time {
   text-align: center;
   position: relative;
-  top: 70px;
-  left: 300px;
-  font-size: 100px;
+  top: 43px;
+  left: 265px;
+  font-size: 65px;
 }
 .busstop-box table, .timetable-box table, .taxi-box table {
-  width: 950px;
+  width: 650px;
   margin: 0 auto;
   text-align: center;
 }
@@ -390,39 +381,39 @@ header #sp-logo {
   padding-bottom: 20px;
 }
 .busstop-text p{
-  font-size: 35px;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  font-size: 30px;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
 .taxi-text p {
-  font-size: 35px;
+  font-size: 20px;
   padding-top: 30px !important;
 }
 .busstop-icon .icon-run img {
   width: 155px;
 }
 .taxi-comp td p {
-  padding-top: 40px;
-  font-size: 40px;
+  padding-top: 15px;
+  font-size: 20px;
 }
 .busstop-time {
-  font-size: 40px;
+  font-size: 25px;
 }
 .taxi-phone {
-  font-size: 30px;
+  font-size: 20px;
 }
 .timetable-text h2 {
-  font-size: 55px;
+  font-size: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 300;
 }
 .timetable-stops p {
-  font-size: 45px;
-  padding-bottom: 20px;
+  font-size: 25px;
+  padding-bottom: 5px;
 }
 .timetable-slots p {
-  font-size: 40px;
+  font-size: 25px;
 }
 /*CSS for News Page*/
 .news-header {
@@ -537,7 +528,7 @@ header #sp-logo {
   border-radius: 50px;
 }
 /*CSS for Map page*/
- .map-box {
+ /*.map-box {
   width: 1000px;
   height: 800px;
   vertical-align: top;
@@ -545,9 +536,13 @@ header #sp-logo {
   *display: inline;
   zoom: 1;
   border-radius: 5px;
- }
+ }*/
+
+.map-container img {
+  width: 720px;
+}
 .map-hdr h1{
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 300;
   text-align: center;
   padding-bottom: 30px;
@@ -658,31 +653,30 @@ header #sp-logo {
 }
 
 .show-events iframe {
-  margin-top: -351px;
-  margin-left: 30px;
-  width: 742px;
-  height: 1465px;
+  margin-top: -387px;
+  margin-left: 80px;
+  width: 600px;
+  height: 1200px;
 }
 /*CSS for INFO PAGE*/
 
 .inner_row img, .inner_row img {
   max-width: 100px;
-  padding-top: 20px;
 }
 .inner_row h3, .inner_row h3 {
   padding-top: 30px;
-  font-size: 30px;
+  font-size: 25px;
 }
 .inner_row p {
-  font-size: 25px;
+  font-size: 15px;
   padding-top: 20px;
 }
 .inner_row {
   height: 80%;
-  margin-top: 17%;
+  margin-top: 6%;
 }
 .info-hdr h1{
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 300;
   text-align: center;
   padding-bottom: 30px;

@@ -1,12 +1,12 @@
 .card-section {
   margin: 0 auto;
-  width: 1050px;
+  width: 710px;
 }
 .card {
   position: relative;
   float: left;
-  padding-bottom: 400px;
-  width: 500px;
+  padding-bottom: 250px;
+  width: 335px;
   margin: 10px;
   text-align: center;
   border-radius: 5px;
