@@ -63,7 +63,7 @@ body {
     background: -o-linear-gradient(#337991,#014359 ); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#337991,#014359 ); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#337991,#014359 ); /* Standard syntax (must be last) */
-  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  font-family: Bliss Regular, Fallback, sans-serif; 
   font-weight: normal;
   font-style: normal;
   overflow: hidden;
@@ -336,11 +336,16 @@ a {
 
 /*CSS for BUS PAGE*/
 
-.nextbus-container, .busstop-container, .timetable-container,.taxi-container,.map-container{
+.nextbus-container, .busstop-container, .timetable-container,.taxi-container{
   text-align: center;
   padding-bottom: 15px;
   
 }
+.map-container {
+  margin: 0 auto;
+  width: 500px;
+}
+
 .nextbus-container .nextbus-box table, .busstop-container .busstop-box table,
 .timetable-container .timetable-box table, .taxi-container .taxi-box table {
   position: absolute;
@@ -447,7 +452,8 @@ a {
 }
 
 .map-container img {
-  width: 720px;
+  width: 500px;
+  padding-bottom: 15px;
 }
 .map-hdr h1, .event_hdr h1, .bus-hdr h1{
   font-size: 40px;
