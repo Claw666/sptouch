@@ -336,21 +336,17 @@ a {
 
 /*CSS for BUS PAGE*/
 
-.nextbus-container, .busstop-container, .timetable-container,.taxi-container{
+.nextbus-S-container, .nextbus-R-container, .taxi-container{
   text-align: center;
   padding-bottom: 15px;
   
 }
-.map-container {
-  margin: 0 auto;
-  width: 500px;
-}
 
-.nextbus-container .nextbus-box table, .busstop-container .busstop-box table,
-.timetable-container .timetable-box table, .taxi-container .taxi-box table {
+
+.nextbus-S-container .nextbus-S-box table, .nextbus-R-container .nextbus-R-box table, .taxi-container .taxi-box table {
   position: absolute;
 }
-.nextbus-box, .busstop-box, .timetable-box, .taxi-box{
+.nextbus-S-box, .nextbus-R-box, .taxi-box{
   width: 650px;
   height: 150px;
   vertical-align: top;
@@ -360,70 +356,33 @@ a {
   background: #014359;
   border-radius: 5px;
 }
-.timetable-box {
-  height: 500px !important;
-}
-.nextbus-text {
-  position: relative;
-  left: 35px;
-  font-size: 30px;
-}
-.nextbus-icon img{
-  width: 110px;    
-  position: relative;
-  top: 15px;
-  left: 55px;
-}
-.nextbus-time {
-  text-align: center;
-  position: relative;
-  top: 43px;
-  left: 265px;
-  font-size: 65px;
-}
-.busstop-box table, .timetable-box table, .taxi-box table {
+.nextbus-S-box table, .nextbus-R-box table,.taxi-box table {
   width: 650px;
   margin: 0 auto;
   text-align: center;
 }
-.busstop-box .busstop-icon img  {
-  width: 100px;
-  padding-bottom: 20px;
-}
-.busstop-text p{
+.nextbus-S-text p , .nextbus-R-text p{
   font-size: 30px;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-top: 20px !important;
 }
 .taxi-text p {
   font-size: 30px;
   padding-top: 30px !important;
 }
-.busstop-icon .icon-run img {
-  width: 155px;
+.nextbus-S-box table th, .nextbus-R-box table th {
+  font-size: 20px;
+  padding-top:15px !important;
+}
+.nextbus-S-box .bus-dep p, .nextbus-R-box .bus-dep p {
+  padding-top:10px !important;
+  font-size: 30px;
 }
 .taxi-comp td p {
   padding-top: 15px;
   font-size: 20px;
 }
-.busstop-time {
-  font-size: 25px;
-}
 .taxi-phone {
   font-size: 20px;
-}
-.timetable-text h2 {
-  font-size: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-weight: 300;
-}
-.timetable-stops p {
-  font-size: 25px;
-  padding-bottom: 5px;
-}
-.timetable-slots p {
-  font-size: 25px;
 }
 /*CSS for News Page*/
 .news-header {

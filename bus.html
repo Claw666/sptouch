@@ -22,37 +22,7 @@
 	<!--Main Part of Body-->
 	<article>
 		<div class="bus-hdr"><h1>Transport links</h1></div>
-		<!--<section class="nextbus-container">
-			<div class="nextbus-box grow">
-				<table>
-				  <tr>
-				    <td class="nextbus-text">Next Bus in:</td>
-				    <td class="nextbus-time" rowspan="2">13:47</td>
-				  </tr>
-				  <tr>
-				    <td class="nextbus-icon"><img src="assets/img/bus_icon.png"></td>
-				  </tr>
-				</table>
-			</div>
-		</section>
-		<section class="busstop-container">
-			<div class="busstop-box grow">
-				<table>
-				  <tr class="busstop-text">
-				    <td colspan="2"><p>Time to nearest bus stop</p></td>
-				  </tr>
-				  <tr class="timetable-stops">
-				    <td class="stop-sp"><p>Science Park</p></td>
-				    <td class="stop-chillarms"><p>Chillworth Arms</p></td>
-				  </tr>
-				  <tr class="timetable-slots">
-				  	<td ><p>6 mins</p></td>
-				  	<td ><p>13 mins</p></td>
-				  </tr>
-				</table>
-			</div>
-		</section>-->
-		<section class="timetable-container">
+		<!--<section class="timetable-container">
 			<div class="timetable-box grow">
 				<table>
 				  <tr class="timetable-text">
@@ -108,6 +78,38 @@
 				  </tr>
 				</table>
 			</div>
+		</section>-->
+		<section class="nextbus-S-container">
+			<div class="nextbus-S-box grow">
+				<table>
+				  	<tr class="nextbus-S-text">
+				    	<td colspan="2"><p>Next Bus To Southampton</p></td>
+				  	</tr>
+					<tr>
+				   		<th>From Science Park</th>
+				   		<th>From Chilworth Arms</th>
+				 	</tr>
+					<tr class="bus-dep">
+						<td class=""><p><span id="soton_soton"></span></p></td>
+					    <td class=""><p><span id="soton_chil"></span></p></td>
+				</table>
+			</div>
+		</section>
+		<section class="nextbus-R-container">
+			<div class="nextbus-R-box grow">
+				<table>
+				  	<tr class="nextbus-R-text">
+				    	<td colspan="2"><p>Next Bus To Romsey</p></td>
+				  	</tr>
+					<tr>
+				   		<th>From Science Park</th>
+				   		<th>From Chilworth Arms</th>
+				 	</tr>
+					<tr class="bus-dep">
+						<td class=""><p><span id="rom_soton"></span></p></td>
+					    <td class=""><p><span id="rom_chil"></span></p></td>
+				</table>
+			</div>
 		</section>
 		<section class="taxi-container">
 			<div class="taxi-box grow">
@@ -133,4 +135,98 @@
 	<footer>
 
 	</footer>
+	<script type="text/javascript">
+  
+  var date = new Date();
+    var currentHours = date.getHours();
+    var currentMins = date.getMinutes();
+    var currentSecs = date.getSeconds();
+    var timeMins = date.getHours()*60 + date.getMinutes();
+
+  /*Bus departure times in minutes (e.g. 17:15 -> 17*60+15) */
+  var timeSotSot = [1000, 1030, 1075];
+  var timeSotChil = [458, 546, 591, 676, 736, 796, 856, 941, 1005, 1035, 1080];
+  var timeRomSot = [476, 530];
+  var timeRomChil = [474, 528, 600, 660, 725, 785, 871, 996, 1056];
+
+
+
+  function getHourSotChil(hours)
+  {
+      for(var i = 0; i< timeSotChil.length; i++)
+      {
+          if(timeSotChil[i]> hours)
+          {
+              return timeSotChil[i];
+          }
+      }
+  }
+  function getHourSotSot(hours)
+  {
+      for(var i = 0; i< timeSotSot.length; i++)
+      {
+          if(timeSotSot[i]> hours)
+          {
+              return timeSotSot[i];
+          }
+      }
+  }
+  function getHourRomChil(hours)
+  {
+      for(var i = 0; i< timeRomChil.length; i++)
+      {
+          if(timeRomChil[i]> hours)
+          {
+              return timeRomChil[i];
+          }
+      }
+  }
+  function getHourRomSot(hours)
+  {
+      for(var i = 0; i< timeRomSot.length; i++)
+      {
+          if(timeRomSot[i]> hours)
+          {
+              return timeRomSot[i];
+          }
+      }
+  }
+
+  var timeToSotChil = getHourSotChil(timeMins);
+  var timeToSotSot = getHourSotSot (timeMins);
+  var timeToRomChil = getHourRomChil(timeMins);
+  var timeToRomSot = getHourRomSot (timeMins);
+  var leavingTimeSotChil = (timeToSotChil-timeMins);
+  var leavingTimeSotSot = (timeToSotSot-timeMins);
+  var leavingTimeRomChil = (timeToRomChil-timeMins);
+  var leavingTimeRomSot = (timeToRomSot-timeMins);
+
+  if (timeMins < 940 || timeMins >= 1075){
+      document.getElementById("soton_soton").innerHTML = "No Bus";
+  }
+  else {
+      document.getElementById("soton_soton").innerHTML = "in " + leavingTimeSotSot + " mins";
+  }
+
+  if (timeMins < 420 || timeMins >= 1080){
+      document.getElementById("soton_chil").innerHTML = "No Bus";
+  }
+  else {
+      document.getElementById("soton_chil").innerHTML = "in " + leavingTimeSotChil + " mins";
+  }
+
+  if (timeMins < 420 || timeMins >= 530){
+      document.getElementById("rom_soton").innerHTML = "No Bus";
+  }
+  else {
+      document.getElementById("rom_soton").innerHTML = "in " + leavingTimeRomSot + " mins";
+  }
+
+  if (timeMins < 420 || timeMins >= 1056){
+      document.getElementById("rom_chil").innerHTML = "No Bus";
+  }
+  else {
+      document.getElementById("rom_chil").innerHTML = "in " + leavingTimeRomChil + " mins";
+  }
+</script>
 </body>
