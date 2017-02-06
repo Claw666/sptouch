@@ -257,65 +257,6 @@ a {
 	opacity: 1;
 	z-index:1;
 }
-#hdr-news {
-	text-align: center;
-	font-size: 3em;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.news-item {
-	margin: 0 auto;
-	width: 80%;
-	height: 200px;
-	background-color: white;
-	margin-bottom: 20px;
-  border-radius: 10px;
-}
-.news-block {
-  color: black;
-}
-.news-block .news-icon img{
-  width: 65px;
-  position: relative;
-  left: 15px;
-  top: 15px;
-  float: left;
-}
-.news-block .news-name {
-  float: left;
-  padding: 20px;
-  padding-left: 50px;
-  font-size: 50;
-  text-align: center;
-}
-.news-block .news-date {
-  float: left;
-  padding: 20px;
-  padding-left: 50px;
-  font-size: 50;
-  text-align: center;
-}
-.news-block .news-info {
-  float: left;
-  padding-left: 20px;
-  padding-top: 20px;
-  font-size: 30px;
-}
-.read-btn button {
-  font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
-  background-color: #337991;
-  border: none;
-  border-radius: 15px;
-  color: #fff;
-  padding: 50px 150px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 45px;
-  cursor: pointer;
-}
-.read-btn {
-	text-align: center;
-}
 .center { 
   margin: 0 auto; 
   width: 1200px; 
@@ -384,19 +325,6 @@ a {
 .taxi-phone {
   font-size: 20px;
 }
-/*CSS for News Page*/
-.news-header {
-  font-size: 70px;
-  font-weight: 300;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.news-header-descr {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 
 .arrow-circle img {
   width: 50px;
@@ -421,7 +349,9 @@ a {
   padding-bottom: 30px;
 }
 
-
+.map-container {
+  text-align: center;
+}
 /*CSS for event page*/
 .show-events {
   overflow: hidden;

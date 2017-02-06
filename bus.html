@@ -136,12 +136,6 @@
 
 	</footer>
 	<script type="text/javascript">
-  
-  var date = new Date();
-    var currentHours = date.getHours();
-    var currentMins = date.getMinutes();
-    var currentSecs = date.getSeconds();
-    var timeMins = date.getHours()*60 + date.getMinutes();
 
   /*Bus departure times in minutes (e.g. 17:15 -> 17*60+15) */
   var timeSotSot = [1000, 1030, 1075];
@@ -149,9 +143,14 @@
   var timeRomSot = [476, 530];
   var timeRomChil = [474, 528, 600, 660, 725, 785, 871, 996, 1056];
 
-
-
-  function getHourSotChil(hours)
+  window.setInterval("refreshDiv()", 200);
+  function refreshDiv(){
+  	var date = new Date();
+    var currentHours = date.getHours();
+    var currentMins = date.getMinutes();
+    var currentSecs = date.getSeconds();
+  	var timeMins = date.getHours()*60 + date.getMinutes();
+  	function getHourSotChil(hours)
   {
       for(var i = 0; i< timeSotChil.length; i++)
       {
@@ -192,6 +191,7 @@
       }
   }
 
+
   var timeToSotChil = getHourSotChil(timeMins);
   var timeToSotSot = getHourSotSot (timeMins);
   var timeToRomChil = getHourRomChil(timeMins);
@@ -228,5 +228,10 @@
   else {
       document.getElementById("rom_chil").innerHTML = "in " + leavingTimeRomChil + " mins";
   }
+  	
+  }
+
+
+
 </script>
 </body>
