@@ -352,17 +352,17 @@ a {
 .map-container {
   text-align: center;
 }
-/*CSS for event page*/
+/*CSS for Event page*/
 .show-events {
   overflow: hidden;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 741px;
 }
 
 .show-events iframe {
-  margin-top: -387px;
-  margin-left: 80px;
-  width: 600px;
+  margin-top: -350px;
+  margin-left: -1px;
+  width: 741px;
   height: 1200px;
 }
 /*CSS for INFO PAGE*/
