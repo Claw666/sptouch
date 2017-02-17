@@ -403,32 +403,38 @@ a {
     max-width: 67%;
   }
   .menu-text {
-    top: 116px;
+    top: 111px;
     font-size: 1.6em;
   }
   .events-icon img {
-    left: 25px;
-    top: 7px;
+    left: 29px;
+    top: 15px;
+    height: 90px !important;
   }
   .search-icon img {
-    left: 28px;
-    top: 15px;
+    left: 33px;
+    top: 19px;
+    height: 80px !important;
   }
   .meeting-icon img {
-    left: 20px;
-    top: 24px;
+    left: 31px;
+    top: 30px;
+    height: 60px !important;
   }
   .bus-icon img {
-    left: 30px;
-    top: 14px;
+    left: 36px;
+    top: 21px;
+    height: 80px !important;
   }
   .info-icon img {
-    left: 30px;
-    top: 15px;
+    left: 36px;
+    top: 21px;
+    height: 80px !important;
   }
   .map-icon img {
-    left: 7px;
-    top: -13px;
+    left: 16px;
+    top: -4px;
+    height: 120px !important;
   }
   .box-one, .box-two {
     margin-right: 10px;
