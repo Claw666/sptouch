@@ -200,7 +200,6 @@ a {
 }
 .row-one,.row-two, .row-three {
     text-align: center;
-    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -387,4 +386,48 @@ a {
   font-weight: 300;
   text-align: center;
   padding-bottom: 30px;
+}
+
+@media only screen and (max-width:836px) {
+  .box-one, .box-two, .box-three {
+    width: 149px;
+    height: 149px;
+  }
+  #hdr-container {
+    max-width: 67%;
+  }
+  .menu-text {
+    top: 116px;
+    font-size: 1.6em;
+  }
+  .events-icon img {
+    left: 25px;
+    top: 7px;
+  }
+  .search-icon img {
+    left: 28px;
+    top: 15px;
+  }
+  .meeting-icon img {
+    left: 20px;
+    top: 24px;
+  }
+  .bus-icon img {
+    left: 30px;
+    top: 14px;
+  }
+  .info-icon img {
+    left: 30px;
+    top: 15px;
+  }
+  .map-icon img {
+    left: 7px;
+    top: -13px;
+  }
+  .box-one, .box-two {
+    margin-right: 10px;
+  }
+  .row {
+    padding-bottom: 14px;
+  }
 }
