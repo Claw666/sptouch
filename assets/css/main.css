@@ -198,9 +198,10 @@ a {
   right: 0;
   left: 0;
 }
-.row-one,.row-two, .row-three {
+.row-one,.row-two, .row-three, .row-four {
     text-align: center;
     margin: 0 auto;
+    width: 638px;
 }
 
 .box-one, .box-two, .box-three {
@@ -269,7 +270,8 @@ a {
   box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
   margin: 0 auto;
   display: block;
-  width: 35% !important;
+  max-width: 800px;
+  margin-top: 100px;
 }
 
 /*End of Body*/
@@ -326,14 +328,14 @@ a {
 }
 
 .arrow-circle img {
-  width: 50px;
-    height: 28px;
+      width: 28px;
+    height: 16px;
     float: right;
     position: absolute;
-    right: 20px;
-    bottom: 15px;
+    right: 8px;
+    bottom: 8px;
     background-color: #1A5E75;
-    padding: 20px 10px;
+    padding: 15px 10px;
     border-radius: 50px;
 }
 
@@ -374,7 +376,7 @@ a {
   font-size: 25px;
 }
 .inner_row p {
-      font-size: 19px;
+      font-size: 16px;
     padding: 20px;
     line-height: 1.2;
 }
