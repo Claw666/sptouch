@@ -201,7 +201,6 @@ a {
 .row-one,.row-two, .row-three, .row-four {
     text-align: center;
     margin: 0 auto;
-    width: 638px;
 }
 
 .box-one, .box-two, .box-three {
@@ -270,8 +269,8 @@ a {
   box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
   margin: 0 auto;
   display: block;
-  max-width: 800px;
-  margin-top: 100px;
+  max-width: 600px !important;
+  margin-top: 50px;
 }
 
 /*End of Body*/
@@ -389,6 +388,10 @@ a {
   font-weight: 300;
   text-align: center;
   padding-bottom: 30px;
+}
+
+.info-row{
+  width: 640px;
 }
 
 @media only screen and (max-width:836px) {
