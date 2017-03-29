@@ -11,14 +11,13 @@ font: 71%/1.5 Verdana, Sans-Serif;
 }
 #container {
     margin: 75px auto;
-    width: 559px;
+    width: 372px;
 }
 #write {
 margin: 0 0 5px;
 padding: 5px;
-width: 540px;
+width: 353px;
 height: 15px;
-font: 30px;
 background: #fff;
 border: 1px solid #f9f9f9;
 -moz-border-radius: 5px;
@@ -31,6 +30,7 @@ textarea {
 margin: 0;
 padding: 0;
 list-style: none;
+max-width: 380px;
 }
     #keyboard li {
     float: left;
@@ -45,23 +45,11 @@ list-style: none;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     }
-        .capslock, .tab, .left-shift {
-        clear: left;
-        }
-            #keyboard .tab, #keyboard .delete {
-            width: 70px;
-            }
-            #keyboard .capslock {
-            width: 70px;
+            #keyboard .delete {
+            width: 68px;
             }
             #keyboard .return {
             width: 68px;
-            }
-            #keyboard .left-shift {
-            width: 95px;
-            }
-            #keyboard .right-shift {
-            width: 80px;
             }
         .lastitem {
         margin-right: 0;
