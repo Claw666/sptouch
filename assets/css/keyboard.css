@@ -23,9 +23,6 @@ border: 1px solid #f9f9f9;
 -moz-border-radius: 5px;
 -webkit-border-radius: 5px;
 }
-textarea {
-   resize: none;
-}
 #keyboard {
 margin: 0;
 padding: 0;
