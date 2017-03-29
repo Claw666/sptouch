@@ -70,3 +70,7 @@ max-width: 380px;
         border-color: #e5e5e5;
         cursor: pointer;
         }
+    .fa-long-arrow-left {
+        line-height: 34px !important;
+        font-size: 25px !important;
+    }
