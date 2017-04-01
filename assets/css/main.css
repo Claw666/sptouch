@@ -410,8 +410,7 @@ footer .touch-btn {
 }
 
 .map-container img {
-  width: 500px;
-  padding-bottom: 15px;
+  width: 720px;
 }
 .map-hdr h1, .event_hdr h1, .bus-hdr h1{
   font-size: 40px;
@@ -519,4 +518,13 @@ footer .touch-btn {
   0% { transform: scale(1); }
   50% { transform: scale(1.07); }
   100% { transform: scale(1); }
+}
+
+.disable_click {
+  width: 722px;
+  height: 1000px;
+  position: absolute;
+  left: 0;
+  z-index: 99999;
+  
 }

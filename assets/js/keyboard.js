@@ -1,7 +1,5 @@
 $(function(){
-    var $write = $('#write'),
-        shift = false,
-        capslock = false;
+    var $write = $('#write');
     
     $('#keyboard li').click(function(){
         var $this = $(this),
@@ -15,9 +13,5 @@ $(function(){
             $write.val(html.substr(0, html.length - 1));
             return false;
         }
-        
-        console.log("DO IT ", character);
-        // Add the character
-        $write.val($write.val() + character);
     });
 });

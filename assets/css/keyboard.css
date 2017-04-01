@@ -47,21 +47,8 @@ max-width: 380px;
             #keyboard .delete {
             width: 34px;
             }
-            #keyboard .return {
-            width: 68px;
-            }
         .lastitem {
         margin-right: 0;
-        }
-        .uppercase {
-        text-transform: uppercase;
-        }
-        #keyboard .space {
-        clear: left;
-        width: 552px;
-        }
-        .on {
-        display: none;
         }
         #keyboard li:hover {
         position: relative;
