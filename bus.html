@@ -7,6 +7,8 @@
 	<title>Science Park Touch Screen</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<script src="assets/js/clock.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/idle-timer.min.js"></script>
 </head>
 <body >
 	<!--Header-->
@@ -14,14 +16,17 @@
 		<nav>
 			<div id="hdr-container">
     			<div class="hdr-date"></div>
-    			<div class="back-container"><a href="index.html"><img id="icon-backwards" src="assets/img/back-sign.png"></a></div>
+    			<div class="back-container">
+    				<a href="index.html"><img id="icon-backwards" src="assets/img/back-sign.png"></a>
+    				<a href="index.html"><img id="icon-backwards" src="assets/img/home.png"></a>
+    			</div>
     			<div class="logo"><img  id="sp-logo" src="assets/img/southampton-science-park.png" alt="Science Park" /></div>
 			</div>
 		</nav>
 	</header>
 	<!--Main Part of Body-->
 	<article>
-		<div class="bus-hdr"><h1>Transport links</h1></div>
+		<div class="bus-hdr"><h1>Transport links</h1> </div>
 		<!--<section class="timetable-container">
 			<div class="timetable-box grow">
 				<table>
@@ -233,5 +238,19 @@
 
 
 
+</script>
+<script type="text/javascript">
+	(function ($) {
+      
+    $( document ).on( "idle.idleTimer", function(event, elem, obj){
+        window.location.href = "http://csongorkocsis.me/sptouch/";
+    });
+    
+    $( document ).on( "active.idleTimer", function(event, elem, obj, triggerevent){
+    });
+    
+    $.idleTimer(20000);
+    
+})(jQuery);
 </script>
 </body>
