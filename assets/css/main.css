@@ -397,6 +397,15 @@ footer .touch-btn {
   font-size: 20px;
 }
 
+.bus_map {
+  margin: 0 auto;
+  width: 720px;
+}
+.bus_map img {
+  width: 720px;
+}
+
+/*-------------------------------------------------------------------------*/
 .arrow-circle img {
       width: 28px;
     height: 16px;
