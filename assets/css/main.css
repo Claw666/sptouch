@@ -297,6 +297,15 @@ a {
   padding-bottom: 30px;
 }
 
+.promo_wrapper {
+  margin-top: 20px !important;
+  margin: 0 auto;
+  width: 485px;
+}
+.promo_wrapper img {
+  width: 485px;
+}
+
 footer .touch-btn {
   background-color: #fff;
   color: #014359;
@@ -475,8 +484,8 @@ footer .touch-btn {
 
 @media only screen and (max-width:836px) {
   .box-one, .box-two, .box-three {
-    width: 149px;
-    height: 149px;
+    width: 153px;
+    height: 153px;
   }
   .menu-text {
     top: 111px;
@@ -519,9 +528,7 @@ footer .touch-btn {
     padding-bottom: 14px;
   }
 }
-.box {
-  animation: pound 5s linear infinite;
-}
+
 
 @keyframes pound {
   0% { transform: scale(1); }

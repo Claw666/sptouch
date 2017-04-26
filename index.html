@@ -30,38 +30,36 @@
 			</div>
 			<article>
 				<section class="row row-one">
-					<a href="meeting.html"><div class="box box-one ">
+					<a href="meeting.html"><div class="grow box-one ">
 						<div class="menu-icon meeting-icon"><img src="assets/img/business-meeting.png"></div>
 						<div class="menu-text meeting-text"><p>Meetings</p></div>
 					</div></a>
-		    		<a href="http://178.62.9.102:8080/search"><div class="box box-two ">
+		    		<a href="http://178.62.9.102:8080/search"><div class="grow box-two ">
 		    			<div class="menu-icon search-icon"><img src="assets/img/magnifier.png"></div>
 		    			<div class="menu-text search-text"><p>Directory</p></div>
 		    		</div></a>
-		    		<a href="events.html"><div class="box box-three ">
+		    		<a href="events.html"><div class="grow box-three ">
 		    			<div class="menu-icon events-icon"><img src="assets/img/cal.png"></div>
 		    			<div class="menu-text events-text"><p>Events</p></div>
 		    		</div></a>
 				</section>
 				<section class="row row-two">
-		    		<a href="bus.html"><div class="box box-one ">
+		    		<a href="bus.html"><div class="grow box-one ">
 		    			<div class="menu-icon bus-icon"><img src="assets/img/scholar-bus-stop.png"></div>
 		    			<div class="menu-text bus-text"><p>Transport</p></div>
 		    		</div></a>
-		    		<a href="info.html"><div class="box box-two ">
+		    		<a href="info.html"><div class="grow box-two ">
 		    			<div class="menu-icon info-icon"><img src="assets/img/info_light.png"></div>
 		    			<div class="menu-text info-text"><p>Info</p></div>
 		    		</div></a>
-		    		<a href="map.html"><div class="box box-three ">
+		    		<a href="map.html"><div class="grow box-three ">
 						<div class="menu-icon map-icon"><img src="assets/img/route.png"></div>
 						<div class="menu-text map-text"><p>Map</p></div>
 					</div></a>
 				</section>
 				<section>
-					<div id='media-player'>
-						<video id='media-video' class="center" autoplay loop muted>
-							<source src='assets/video/tcc.mp4' type='video/mp4'>
-						</video>
+					<div class='promo_wrapper'>
+						<img src="assets/img/event.png">
 					</div>	
 				</section>
 			</article>
@@ -75,14 +73,3 @@
 	</div>
 </body>
 
-<script type="text/javascript">
-	var elements = document.querySelectorAll('.box')
-var animationDuration = 20000; // in milliseconds
-
-// Set the animationDelay of each element to a random value
-// between 0 and animationDuration:
-for (var i = 0; i < elements.length; i++) {
-  var randomDuration = Math.floor(Math.random() * animationDuration);
-  elements[i].style.animationDelay = randomDuration + 'ms';  
-}
-</script>

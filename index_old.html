@@ -2,87 +2,87 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<title>Science Park Touch Screen</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script src="assets/js/clock.js"></script>
 </head>
 <body>
-	<!--Header-->
-	<header>
-		<nav>
-			<div id="hdr-container">
-    			<div class="hdr-date">Mon 13:30PM</div>
-    			<div class="back-container"></div>
-    			<div class="logo"><img  id="sp-logo" src="assets/img/southampton-science-park.png" alt="Science Park" /></div>
+	<div id="holder">
+		<!--Header-->
+		<header>
+			<nav>
+				<div id="hdr-container">
+	    			<div id ="clockbox" class="hdr-date"></div>
+	    			<div class="back-container"></div>
+	    			<div class="logo"><img  id="sp-logo" src="assets/img/southampton-science-park.png" alt="Science Park" /></div>
+	    			<br style="clear: left;" />
+				</div>
+			</nav>
+		</header>
+		<div id="body">
+			<!--Main Part of Body-->
+			<div class="index_title">
+				<h1>WELCOME</h1>
+				<p>to the home of technology commercialisation and business start-ups</p>
 			</div>
-		</nav>
-	</header>
-	<!--Main Part of Body-->
-	<article>
-		<section class="row row-one">
-			<a href="map.html"><div class="box-one grow">
-				<div class="map-icon"><img src="assets/img/map-marker-with-a-person-shape.png"></div>
-				<div class="map-text"><p>Map</p></div>
-			</div></a>
-    		<a href="search.html"><div class="box-two grow">
-    			<div class="search-icon"><img src="assets/img/search.png"></div>
-    			<div class="search-text"><p>Search</p></div>
-    		</div></a>
-    		<div class="box-three grow">
-    			<div class="restroom-icon"><img src="assets/img/restroom.png"></div>
-    			<div class="restroom-text"><p>Toilet</p></div>
-    		</div>
-		</section>
-		<section class="row row-two">
-			<a href="meeting.html"><div class="box-one grow">
-				<div class="meeting-icon"><img src="assets/img/business-meeting.png"></div>
-				<div class="meeting-text"><p>Meeting</p></div>
-			</div></a>
-    		<a href="bus.html"><div class="box-two grow">
-    			<div class="bus-icon"><img src="assets/img/scholar-bus-stop.png"></div>
-    			<div class="bus-text"><p>Bus</p></div>
-    		</div></a>
-    		<div class="box-three grow">
-    			<div class="info-icon"><img src="assets/img/info.png"></div>
-    			<div class="info-text"><p>Info</p></div>
-    		</div>
-		</section>
-		<section class="news">
-			<h1 id="hdr-news">News</h1>
-			<div class="news-block">
-				<div class="news-item ">
-					<div class="news-row-1">
-						<div class="news-icon"><img src="assets/img/send.png"></div>
-						<div class="news-name"><p>Troudigital</p></div>
-						<div class="news-date"><p>07.06.2016</p></div><br />
-						<div class="news-info"><p>Troudigital just inked one of its biggest deals in Asia so far ass it focuses on internation growth.</p></div>
-					</div>
-				</div>
-				<div class="news-item ">
-					<div class="news-row-1">
-						<div class="news-icon"><img src="assets/img/send.png"></div>
-						<div class="news-name"><p>Troudigital</p></div>
-						<div class="news-date"><p>07.06.2016</p></div><br />
-						<div class="news-info"><p>Troudigital just inked one of its biggest deals in Asia so far ass it focuses on internation growth.</p></div>
-					</div>
-				</div>
-				<div class="news-item ">
-					<div class="news-row-1">
-						<div class="news-icon"><img src="assets/img/send.png"></div>
-						<div class="news-name"><p>Troudigital</p></div>
-						<div class="news-date"><p>07.06.2016</p></div><br />
-						<div class="news-info"><p>Troudigital just inked one of its biggest deals in Asia so far ass it focuses on internation growth.</p></div>
-					</div>
-				</div>
+			<article>
+				<section class="row row-one">
+					<a href="meeting.html"><div class="box box-one ">
+						<div class="menu-icon meeting-icon"><img src="assets/img/business-meeting.png"></div>
+						<div class="menu-text meeting-text"><p>Meetings</p></div>
+					</div></a>
+		    		<a href="http://178.62.9.102:8080/search"><div class="box box-two ">
+		    			<div class="menu-icon search-icon"><img src="assets/img/magnifier.png"></div>
+		    			<div class="menu-text search-text"><p>Directory</p></div>
+		    		</div></a>
+		    		<a href="events.html"><div class="box box-three ">
+		    			<div class="menu-icon events-icon"><img src="assets/img/cal.png"></div>
+		    			<div class="menu-text events-text"><p>Events</p></div>
+		    		</div></a>
+				</section>
+				<section class="row row-two">
+		    		<a href="bus.html"><div class="box box-one ">
+		    			<div class="menu-icon bus-icon"><img src="assets/img/scholar-bus-stop.png"></div>
+		    			<div class="menu-text bus-text"><p>Transport</p></div>
+		    		</div></a>
+		    		<a href="info.html"><div class="box box-two ">
+		    			<div class="menu-icon info-icon"><img src="assets/img/info_light.png"></div>
+		    			<div class="menu-text info-text"><p>Info</p></div>
+		    		</div></a>
+		    		<a href="map.html"><div class="box box-three ">
+						<div class="menu-icon map-icon"><img src="assets/img/route.png"></div>
+						<div class="menu-text map-text"><p>Map</p></div>
+					</div></a>
+				</section>
+				<section>
+					<div id='media-player'>
+						<video id='media-video' class="center" autoplay loop muted>
+							<source src='assets/video/tcc.mp4' type='video/mp4'>
+						</video>
+					</div>	
+				</section>
+			</article>
+		</div>
+		<!--Footer-->
+		<footer>
+			<div class="touch-btn">
+				<h2>Touch to use</h2>
 			</div>
-		</section>
-		<section>
-			<div class="read-btn"><a href="news.html"><button type="button">Find More News</button></a></div>
-		</section>
-	</article>
-	<!--Footer-->
-	<footer>
-
-	</footer>
+		</footer>
+	</div>
 </body>
+
+<script type="text/javascript">
+	var elements = document.querySelectorAll('.box')
+var animationDuration = 20000; // in milliseconds
+
+// Set the animationDelay of each element to a random value
+// between 0 and animationDuration:
+for (var i = 0; i < elements.length; i++) {
+  var randomDuration = Math.floor(Math.random() * animationDuration);
+  elements[i].style.animationDelay = randomDuration + 'ms';  
+}
+</script>
