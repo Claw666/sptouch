@@ -546,6 +546,7 @@ footer .touch-btn {
     zoom: 1;
     background: #014359;
     border-radius: 5px;
+    animation: pound 5s linear infinite;
 
 }
 .row-room a {
