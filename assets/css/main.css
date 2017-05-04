@@ -81,7 +81,8 @@ footer{
     width:100%;
     position: absolute;
     left: 0;
-    bottom: 0; 
+    bottom: 0;
+    height: 300px;
 }
 a {
   text-decoration: none;
@@ -230,6 +231,9 @@ a {
 .row {
 	padding-bottom: 30px;
 }
+.row a {
+	display: inline-block;
+}
 .grow {
 	position: relative;
   	-webkit-transition:all 0.5s ease-out;
@@ -273,17 +277,6 @@ a {
   display: block;
 }
 
-#media-video{
-  background:#000;
-  color:#ccc;
-  border-radius: 6px;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
-  margin: 0 auto;
-  display: block;
-  max-width: 485px !important;
-  margin-top: 25px;
-}
-
 .index_title {
     margin: 0 auto;
     max-width: 485px;
@@ -309,50 +302,48 @@ a {
 footer .touch-btn {
   background-color: #fff;
   color: #014359;
-  height: 100px;
-  border-radius: 100% ;
+  height: 700px;
+  border-radius: 700px ;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   margin: 0 auto;
   text-align: center;
-  animation: pound 5s linear infinite;
+  position: relative;
+  bottom: -180px;
 }
 .touch-btn h2 {
-  padding-top: 28px;
+  padding-top: 46px;
   font-size: 3em;
 }
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-50px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
 
-.pulse {
-  box-shadow: 0 0 0 rgba(255,255,255, 0.5);
-}
- .pulse:hover{
-  animation: pulse 3s infinite;
-}
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.5);
-  }
-  70% {
-      -webkit-box-shadow: 0 0 0 200px rgba(255,255,255, 0);
-  }
-  100% {
-      -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
-  }
-}
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0.5);
-    box-shadow: 0 0 0 0 rgba(255,255,255, 0.5);
-  }
-  70% {
-      -moz-box-shadow: 0 0 0 200px rgba(255,255,255, 0);
-      box-shadow: 0 0 0 200px rgba(255,255,255, 0);
-  }
-  100% {
-      -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 0);
-      box-shadow: 0 0 0 0 rgba(255,255,255, 0);
-  }
-}
 /*End of Body*/
 
 /*CSS for BUS PAGE*/
@@ -555,8 +546,8 @@ footer .touch-btn {
 }
 
 .room {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: inline-block;
     *display: inline;
     zoom: 1;
@@ -565,8 +556,8 @@ footer .touch-btn {
 
 }
 .row-room a {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: inline-block;
   margin-right: 30px;
 }
@@ -574,7 +565,7 @@ footer .touch-btn {
   margin-right: 0 !important;
 }
 .wrapper {
-   height: 100px;
+   height: 80px;
 }
 .wrapper p {
     position: relative;
