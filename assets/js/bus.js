@@ -64,29 +64,29 @@
   var leavingTimeRomSot = (timeToRomSot-timeMins);
 
   if (timeMins < 940 || timeMins >= 1075){
-      document.getElementById("soton_soton").innerHTML = "No Bus";
+      document.getElementById("soton_soton").innerHTML = "No buses";
   }
   else {
-      document.getElementById("soton_soton").innerHTML = "in " + leavingTimeSotSot + " mins";
+      document.getElementById("soton_soton").innerHTML = "In " + leavingTimeSotSot + " mins";
   }
 
   if (timeMins < 420 || timeMins >= 1080){
-      document.getElementById("soton_chil").innerHTML = "No Bus";
+      document.getElementById("soton_chil").innerHTML = "No buses";
   }
   else {
-      document.getElementById("soton_chil").innerHTML = "in " + leavingTimeSotChil + " mins";
+      document.getElementById("soton_chil").innerHTML = "In " + leavingTimeSotChil + " mins";
   }
 
   if (timeMins < 420 || timeMins >= 530){
-      document.getElementById("rom_soton").innerHTML = "No Bus";
+      document.getElementById("rom_soton").innerHTML = "No buses";
   }
   else {
-      document.getElementById("rom_soton").innerHTML = "in " + leavingTimeRomSot + " mins";
+      document.getElementById("rom_soton").innerHTML = "In " + leavingTimeRomSot + " mins";
   }
 
   if (timeMins < 420 || timeMins >= 1056){
-      document.getElementById("rom_chil").innerHTML = "No Bus";
+      document.getElementById("rom_chil").innerHTML = "No buses";
   }
   else {
-      document.getElementById("rom_chil").innerHTML = "in " + leavingTimeRomChil + " mins";
+      document.getElementById("rom_chil").innerHTML = "In " + leavingTimeRomChil + " mins";
   }
